@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 3.30.0
-Release  : 1
+Release  : 2
 URL      : https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/3.30.0/gnome-tweaks-3.30.0.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-tweaks/-/archive/3.30.0/gnome-tweaks-3.30.0.tar.gz
 Summary  : No detailed summary available
