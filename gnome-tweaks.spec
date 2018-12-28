@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 3.30.2
-Release  : 4
+Release  : 5
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.30/gnome-tweaks-3.30.2.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.30/gnome-tweaks-3.30.2.tar.xz
 Summary  : No detailed summary available
