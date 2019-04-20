@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 3.32.0
-Release  : 6
+Release  : 7
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
 Summary  : Graphical interface for advanced GNOME 3 settings (Tweak Tool)
