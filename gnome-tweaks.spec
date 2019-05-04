@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 3.32.0
-Release  : 7
+Release  : 8
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
 Summary  : Graphical interface for advanced GNOME 3 settings (Tweak Tool)
@@ -86,8 +86,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552359617
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export SOURCE_DATE_EPOCH=1557007081
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain   builddir
 ninja -v -C builddir
 
