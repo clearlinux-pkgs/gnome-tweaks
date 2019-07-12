@@ -4,10 +4,10 @@
 #
 Name     : gnome-tweaks
 Version  : 3.32.0
-Release  : 8
+Release  : 9
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.32/gnome-tweaks-3.32.0.tar.xz
-Summary  : Graphical interface for advanced GNOME 3 settings (Tweak Tool)
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC0-1.0
 Requires: gnome-tweaks-bin = %{version}-%{release}
@@ -16,8 +16,10 @@ Requires: gnome-tweaks-libexec = %{version}-%{release}
 Requires: gnome-tweaks-locales = %{version}-%{release}
 Requires: gnome-tweaks-python = %{version}-%{release}
 Requires: gnome-tweaks-python3 = %{version}-%{release}
+Requires: pygobject
 BuildRequires : buildreq-gnome
 BuildRequires : buildreq-meson
+BuildRequires : pygobject
 
 %description
 GNOME TWEAKS
@@ -85,8 +87,9 @@ python3 components for the gnome-tweaks package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1557007081
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1562956985
+export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
