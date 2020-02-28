@@ -4,10 +4,10 @@
 #
 Name     : gnome-tweaks
 Version  : 3.34.0
-Release  : 14
+Release  : 15
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.0.tar.xz
-Summary  : No detailed summary available
+Summary  : Graphical interface for advanced GNOME 3 settings (Tweak Tool)
 Group    : Development/Tools
 License  : CC0-1.0
 Requires: gnome-tweaks-bin = %{version}-%{release}
@@ -82,13 +82,15 @@ python3 components for the gnome-tweaks package.
 
 %prep
 %setup -q -n gnome-tweaks-3.34.0
+cd %{_builddir}/gnome-tweaks-3.34.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569970428
+export SOURCE_DATE_EPOCH=1582931179
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
