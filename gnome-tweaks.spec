@@ -4,10 +4,10 @@
 #
 Name     : gnome-tweaks
 Version  : 3.34.0
-Release  : 15
+Release  : 16
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.0.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.0.tar.xz
-Summary  : Graphical interface for advanced GNOME 3 settings (Tweak Tool)
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : CC0-1.0
 Requires: gnome-tweaks-bin = %{version}-%{release}
@@ -89,15 +89,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582931179
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1586231859
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
 export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --libdir=lib64 --prefix=/usr --buildtype=plain   builddir
 ninja -v -C builddir
