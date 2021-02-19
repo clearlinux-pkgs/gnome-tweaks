@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 3.34.1
-Release  : 21
+Release  : 22
 URL      : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/3.34/gnome-tweaks-3.34.1.tar.xz
 Summary  : No detailed summary available
