@@ -4,7 +4,7 @@
 #
 Name     : gnome-tweaks
 Version  : 40.10
-Release  : 38
+Release  : 39
 URL      : https://download.gnome.org/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-tweaks/40/gnome-tweaks-40.10.tar.xz
 Summary  : No detailed summary available
