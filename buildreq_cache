@@ -1,2 +1,5 @@
-45.1
-pkgconfig(libhandy-1)
+46.0
+libgudev-dev
+pkgconfig(gudev-1.0)
+pkgconfig(libadwaita-1)
+pkgconfig(pygobject-3.0)
