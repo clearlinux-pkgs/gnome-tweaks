@@ -1,4 +1,4 @@
-46.0
+46.1
 libgudev-dev
 pkgconfig(gudev-1.0)
 pkgconfig(libadwaita-1)
